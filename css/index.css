@@ -26,6 +26,7 @@ html,body{
   z-index: 999;
 }
 .swiper-container .musicMove {
+  -webkit-animation: music 1.5s linear 0s infinite;
   animation: music 1.5s linear 0s infinite;
 }
 @keyframes music {
@@ -43,6 +44,7 @@ html,body{
   margin-left: -0.2rem;
   left: 50%;
   width: .4rem;
+  -webkit-animation: arrowing 1.5s linear 0s infinite;
   animation: arrowing 1.5s linear 0s infinite;
 }
 @keyframes arrowing {
@@ -62,15 +64,20 @@ html,body{
   opacity: 1;
 }
 #pg1 .top {
+
+  -webkit-animation: fadeInUp 1s .1s both;
   animation: fadeInUp 1s .1s both;
 }
 #pg1 .topZoom {
+  -webkit-animation: topzoom 1s 1s both;
   animation: topzoom 1s 1s both;
 }
 #pg1 .middle {
+  -webkit-animation: fadeInLeft 1s .6s both;
   animation: fadeInLeft 1s .6s both;
 }
 #pg1 .btm-logo {
+  -webkit-animation: lightSpeedIn 1s .9s both;
   animation: lightSpeedIn 1s .9s both;
 }
 .pg1 {
@@ -137,27 +144,35 @@ html,body{
   opacity: 1;
 }
 #pg3 .wrapper {
+  -webkit-animation: fadeInDown 1s .1s both;
   animation: fadeInDown 1s .1s both;
 }
 #pg3 .pg2_header {
+  -webkit-animation: fadeIn 1s .2s both;
   animation: fadeIn 1s .2s both;
 }
 #pg3 .pg2_content p:nth-child(1) {
+  -webkit-animation: fadeInRight 1s .8s both;
   animation: fadeInRight 1s .8s both;
 }
 #pg3 .pg2_content p:nth-child(2) {
+  -webkit-animation: fadeInRight 1s 1s both;
   animation: fadeInRight 1s 1s both;
 }
 #pg3 .pg2_content p:nth-child(3) {
+  -webkit-animation: fadeInRight 1s 1.2s both;
   animation: fadeInRight 1s 1.2s both;
 }
 #pg3 .pg2_content p:nth-child(4) {
+  -webkit-animation: fadeInRight 1s 1.4s both;
   animation: fadeInRight 1s 1.4s both;
 }
 #pg3 .pg2_content p:nth-child(5) {
+  -webkit-animation: fadeInRight 1s 1.6s both;
   animation: fadeInRight 1s 1.6s both;
 }
 #pg3 .pg2_laba {
+  -webkit-animation: fadeInLeft 1s .5s both;
   animation: fadeInLeft 1s .5s both;
 }
 .pg2 {
@@ -214,18 +229,23 @@ html,body{
   opacity: 1;
 }
 #pg2 .cld {
+  -webkit-animation: fadeInUp 1s 0s both;
   animation: fadeInUp 1s 0s both;
 }
 #pg2 div:nth-child(1) {
+  -webkit-animation: fadeInDown 1s .5s both;
   animation: fadeInDown 1s .5s both;
 }
 #pg2 div:nth-child(2) {
+  -webkit-animation: fadeInUp 1s 1s both;
   animation: fadeInUp 1s 1s both;
 }
 #pg2 div:nth-child(3) {
+  -webkit-animation: fadeInDown 1s 2s both;
   animation: fadeInDown 1s 2s both;
 }
 #pg2 div:nth-child(4) {
+  -weblit-animation: fadeInUp 1s 2s both;
   animation: fadeInUp 1s 2s both;
 }
 .pg3 {
@@ -272,30 +292,36 @@ html,body{
   opacity: 1;
 }
 #pg4 div:nth-child(1) {
+  -webkit-animation: rubberBand 1s 0s both;
   animation: rubberBand 1s 0s both;
 }
 #pg4 div:nth-child(2) {
   opacity: 1;
 }
 #pg4 div:nth-child(2) span {
+  -webkit-animation: fadeInRight 1s .2s both;
   animation: fadeInRight 1s .2s both;
 }
 #pg4 div:nth-child(2) p {
+  -webkit-animation: fadeInRight 1s .4s both;
   animation: fadeInRight 1s .4s both;
 }
 #pg4 div:nth-child(3) {
   opacity: 1;
 }
 #pg4 div:nth-child(3) span {
+  -webkit-animation: fadeInRight 1s .5s both;
   animation: fadeInRight 1s .5s both;
 }
 #pg4 div:nth-child(3) p {
+  -webkit-animation: fadeInRight 1s .7s both;
   animation: fadeInRight 1s .7s both;
 }
 #pg4 div:nth-child(4) {
   animation: fadeInUp 1s .6s both;
 }
 #pg4 div:nth-child(5) {
+  -webkit-animation: fadeInUp 2s 1s both;
   animation: fadeInUp 2s 1s both;
 }
 .pg4 {

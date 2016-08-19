@@ -1,0 +1,379 @@
+html {
+  font-size: 100px;
+  color: #fff;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-wrapper,
+.swiper-container,
+.swiper-slide {
+  height: 100%;
+}
+.swiper-container {
+  position: relative;
+}
+.swiper-container .music {
+  background: url(../imgs/music.jpg) no-repeat;
+  background-size: 100% 100%;
+  width: .33rem;
+  height: .33rem;
+  position: absolute;
+  right: .17rem;
+  top: .17rem;
+  z-index: 999;
+}
+.swiper-container .musicMove {
+  animation: music 1.5s linear 0s infinite;
+}
+@keyframes music {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.swiper-container .slideBarUp {
+  background: url(../imgs/slideUpBar.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  bottom: .2rem;
+  z-index: 999;
+  height: .2rem;
+  margin-left: -0.2rem;
+  left: 50%;
+  width: .4rem;
+  animation: arrowing 1.5s linear 0s infinite;
+}
+@keyframes arrowing {
+  0% {
+    transform: translateY(-5px);
+    opacity: .6;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+#pg1 * {
+  opacity: 1;
+}
+#pg1 .top {
+  animation: fadeInUp 1s .1s both;
+}
+#pg1 .topZoom {
+  animation: topzoom 1s 1s both;
+}
+#pg1 .middle {
+  animation: fadeInLeft 1s .6s both;
+}
+#pg1 .btm-logo {
+  animation: lightSpeedIn 1s .9s both;
+}
+.pg1 {
+  position: relative;
+  background:black;
+  background-size: 100% 100%;
+  color: white;
+}
+.pg1 > * {
+  opacity: 0;
+}
+.pg1 .top {
+  position: absolute;
+  font-size: 0.53rem;
+  width: 2.46rem;
+  left: 50%;
+  margin-left: -1.23rem;
+  top: 0.64rem;
+  overflow: hidden;
+  text-align: center;
+  line-height: 2.5;
+  color: #26ACDE;
+}
+.pg1 .topZoom {
+  position: absolute;
+  width: 2.77rem;
+  height: 1.66rem;
+  left: 50%;
+  top: .61rem;
+  margin-left: -1.37rem;
+}
+@keyframes topzoom {
+  0% {
+    transform: scale(1.9);
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.8);
+  }
+}
+.pg1 .middle {
+  position: absolute;
+  top: 2.57rem;
+  width: 2.76rem;
+  left: 50%;
+  margin-left: -1.38rem;
+  font-size: .20rem;
+  text-align: center;
+}
+.pg1 .middle .btm-logo {
+  height: 1rem;
+  width: 1rem;
+  margin: 0 auto;
+  background: url(../imgs/person.png) no-repeat;
+  background-size: 100% 100%;
+}
+.pg1 .middle .work{
+  font-size: 0.14rem;
+}
+#pg3 * {
+  opacity: 1;
+}
+#pg3 .wrapper {
+  animation: fadeInDown 1s .1s both;
+}
+#pg3 .pg2_header {
+  animation: fadeIn 1s .2s both;
+}
+#pg3 .pg2_content p:nth-child(1) {
+  animation: fadeInRight 1s .8s both;
+}
+#pg3 .pg2_content p:nth-child(2) {
+  animation: fadeInRight 1s 1s both;
+}
+#pg3 .pg2_content p:nth-child(3) {
+  animation: fadeInRight 1s 1.2s both;
+}
+#pg3 .pg2_content p:nth-child(4) {
+  animation: fadeInRight 1s 1.4s both;
+}
+#pg3 .pg2_content p:nth-child(5) {
+  animation: fadeInRight 1s 1.6s both;
+}
+#pg3 .pg2_laba {
+  animation: fadeInLeft 1s .5s both;
+}
+.pg2 {
+  font-size: .2rem;
+  background:black;
+  overflow: hidden;
+}
+.pg2 > * {
+  opacity: 0;
+}
+.pg2 .wrapper {
+  position: absolute;
+  width: 4.6rem;
+  height: 8.2rem;
+  top: -1.66rem;
+  left: -0.3rem;
+  text-align: center;
+}
+.pg2 .wrapper img {
+  width: 100%;
+  height: 100%;
+  margin: .3rem auto;
+}
+.pg2 .pg2_header {
+  position: absolute;
+  width: 3rem;
+  top: 1rem;
+  left: 50%;
+  margin-left: -1.5rem;
+  text-align: center;
+}
+.pg2 .pg2_content {
+  position: absolute;
+  top: 1.7rem;
+  font-size: .25rem;
+  color: white;
+  padding: 0 .43rem;
+  line-height: 1.5;
+}
+.pg2 .pg2_laba {
+  width: 1.64rem;
+  height: 1.64rem;
+  right: .21rem;
+  top: 3.7rem;
+  position: absolute;
+}
+.pg2 .pg2_laba img {
+  width: 100%;
+  heigth: 100%;
+  overflow: hidden;
+  transform: rotate(30deg) scaleX(-1);
+}
+#pg2 * {
+  opacity: 1;
+}
+#pg2 .cld {
+  animation: fadeInUp 1s 0s both;
+}
+#pg2 div:nth-child(1) {
+  animation: fadeInDown 1s .5s both;
+}
+#pg2 div:nth-child(2) {
+  animation: fadeInUp 1s 1s both;
+}
+#pg2 div:nth-child(3) {
+  animation: fadeInDown 1s 2s both;
+}
+#pg2 div:nth-child(4) {
+  animation: fadeInUp 1s 2s both;
+}
+.pg3 {
+  background: black;
+  font-size: .2rem;
+}
+.pg3 h1{
+  font-size: .25rem;
+  color: lightskyblue;
+}
+.pg3 > * {
+  opacity: 0;
+}
+.pg3 .cld {
+  width: 1.36rem;
+  height: 1.36rem;
+  left: 2.6rem;
+  top: 4.6rem;
+  position: absolute;
+}
+.pg3 .cld img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(38deg);
+}
+.pg3 div:nth-child(1) {
+  font-size: .4rem;
+  text-align: center;
+  margin: .3rem auto 0;
+}
+.pg3 div:nth-child(2) {
+  margin: .4rem 0 0 0;
+  text-align: center;
+}
+.pg3 div:nth-child(3) {
+  margin: .4rem 0 0 0;
+  text-align: center;
+}
+.pg3 div:nth-child(4) {
+  margin: .4rem 0 0 0;
+  text-align: center;
+}
+#pg4 * {
+  opacity: 1;
+}
+#pg4 div:nth-child(1) {
+  animation: rubberBand 1s 0s both;
+}
+#pg4 div:nth-child(2) {
+  opacity: 1;
+}
+#pg4 div:nth-child(2) span {
+  animation: fadeInRight 1s .2s both;
+}
+#pg4 div:nth-child(2) p {
+  animation: fadeInRight 1s .4s both;
+}
+#pg4 div:nth-child(3) {
+  opacity: 1;
+}
+#pg4 div:nth-child(3) span {
+  animation: fadeInRight 1s .5s both;
+}
+#pg4 div:nth-child(3) p {
+  animation: fadeInRight 1s .7s both;
+}
+#pg4 div:nth-child(4) {
+  animation: fadeInUp 1s .6s both;
+}
+#pg4 div:nth-child(5) {
+  animation: fadeInUp 2s 1s both;
+}
+.pg4 {
+  background: black;
+  font-size: .2rem;
+}
+.pg4 > * {
+  opacity: 0;
+}
+.pg4 div:nth-child(1) {
+  opacity: 1;
+  font-size: .5rem;
+  margin: .3rem auto 0;
+  text-align: center;
+}
+.pg4 div:nth-child(2) {
+  margin: .6rem auto 0;
+  padding: 0 .3rem;
+  font-size: .3rem;
+  position: absolute;
+}
+.pg4 div:nth-child(2) span {
+  float: left;
+  margin-right: .1rem;
+  width: .6rem;
+  height: .6rem;
+}
+.pg4 div:nth-child(2) span img {
+  width: 100%;
+  height: 100%;
+}
+.pg4 div:nth-child(2) p {
+  float: left;
+  height: .6rem;
+  line-height: .6rem;
+}
+.pg4 div:nth-child(3) {
+  margin: 1.5rem auto 0;
+  padding: 0 .2rem;
+  font-size: .25rem;
+  position: absolute;
+}
+.pg4 div:nth-child(3) span {
+  float: left;
+  margin-right: .1rem;
+  width: .6rem;
+  height: .6rem;
+}
+.pg4 div:nth-child(3) span img {
+  width: 100%;
+  height: 100%;
+}
+.pg4 div:nth-child(3) p {
+  float: left;
+  height: .6rem;
+  line-height: .6rem;
+}
+.pg4 div:nth-child(4) {
+  position: absolute;
+  width: 3.3rem;
+  height: 2.4rem;
+  left: 50%;
+  margin-left: -1.65rem;
+  bottom: 0;
+  z-index: 1;
+}
+.pg4 div:nth-child(4) img {
+  height: 100%;
+  width: 100%;
+}
+.pg4 .fire {
+  width: 5.7rem;
+  height: 2.6rem;
+  position: absolute;
+  left: -1rem;
+  bottom: 0;
+}
+.pg4 .fire img {
+  width: 100%;
+  height: 100%;
+}

@@ -31,6 +31,7 @@ html,body{
 }
 @keyframes music {
   to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -49,14 +50,17 @@ html,body{
 }
 @keyframes arrowing {
   0% {
+    -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     opacity: .6;
   }
   50% {
+    -webkit-transform: translateY(10px);
     transform: translateY(10px);
     opacity: 1;
   }
   100% {
+    -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
   }
 }
@@ -111,6 +115,7 @@ html,body{
 }
 @keyframes topzoom {
   0% {
+    -webkit-transform: scale(1.9);
     transform: scale(1.9);
   }
   50%,
@@ -118,6 +123,7 @@ html,body{
     opacity: 1;
   }
   75% {
+    -webkit-transform: scale(0.8);
     transform: scale(0.8);
   }
 }
@@ -223,6 +229,7 @@ html,body{
   width: 100%;
   heigth: 100%;
   overflow: hidden;
+  -webkit-transform: rotate(30deg) scaleX(-1);
   transform: rotate(30deg) scaleX(-1);
 }
 #pg2 * {
@@ -269,6 +276,7 @@ html,body{
 .pg3 .cld img {
   width: 100%;
   height: 100%;
+  -webkit-transform: rotate(38deg);
   transform: rotate(38deg);
 }
 .pg3 div:nth-child(1) {
